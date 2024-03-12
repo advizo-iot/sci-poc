@@ -4,7 +4,7 @@ import React from "react";
 interface CloseIconProps {
   width: number ; 
   height: number ;
-  flag: boolean;
+  flag: string;
 }
 
 export const SmokeSensor: React.FC<CloseIconProps> = ({ width, height,flag }) => {
@@ -13,7 +13,7 @@ export const SmokeSensor: React.FC<CloseIconProps> = ({ width, height,flag }) =>
     <div className={`sm:w-2/12 sm:h-2/12 md:w-3/12 md:h-3/12 lg:w-4/12 lg:h-4/12 w-5/12 h-5/12`}>
       <svg width={width} height={height} viewBox="0 0 890 1338" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g id="smoke_fire">
-        <g id="fire" className={flag ? "" : "hidden"}>
+        <g id="fire" className={flag === "normal" ? "hidden" : ""}>
         <g id="flame_left" className="flame_top">
         <path id="Vector" d="M569.947 808.864C612.61 730.197 506.897 719.34 506.707 670.959C506.707 670.959 488.04 720.864 532.613 754.959C568.993 782.578 569.947 808.864 569.947 808.864Z" fill="url(#paint0_linear_2_53)"/>
         <path id="Vector_2" d="M506.71 670.959C502.9 699.721 514.33 741.054 532.613 754.959C549.377 767.721 568.233 789.626 569.757 808.864C598.33 752.864 558.137 732.102 535.09 723.911C525.377 720.483 507.47 700.483 506.71 670.959Z" fill="url(#paint1_radial_2_53)"/>
